@@ -71,20 +71,22 @@ h1 {
     opacity: .75;
 }
 
-.content-box {
+/* .content-box {
   width: 100%;
   padding: 4rem 3rem;
-}
+} */
 
 .row {
   /* display: flex => flex container */
   display: flex;
+  padding: 4rem 0;
+  width: 100%;
 
   /* can't use yet */
   /* gap: 100px; */
 }
 
-.row h2 {
+.col__title {
   color: #87629A;
 }
 
@@ -101,10 +103,5 @@ h1 {
 .highlight {
   width: 100%;
   background-color: #136C72;
-}
-
-.highlight .container {
-  display: flex;
-  justify-content: space-around;
   color: #fff;
 }
