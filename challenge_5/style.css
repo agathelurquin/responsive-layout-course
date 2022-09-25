@@ -23,8 +23,7 @@ body {
 }
 
 img {
-    max-width: 100%;
-
+    width: 32%;
 }
 
 h1 {
@@ -106,7 +105,7 @@ h1 {
 
 
 .highlight {
-  width: 40%;
+  width: 32%;
   background-color: #136C72;
   color: #FFF;
   padding: 1.4rem 2.4rem;
