@@ -1,54 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conquering Responsive Layouts</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,700&family=Playfair+Display:wght@900&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge 7</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,700&family=Playfair+Display:wght@900&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section class="header">
-    <div class="container header__content">
-      <p class = "header__headline">LOREM IPSUM SIT</p>
-      <h1 class="header__title">Responsive layouts don’t have to be a struggle</h1>
+  <section class="intro" >
+    <div class="container">
+      <p class="intro__text">
+        lorem ipsum sit
+      </p>
+      <h2 class="intro__title">
+        Responsive layouts don’t <br>
+        have to be a struggle
+      </h2>
     </div>
-
   </section>
-  <main>
-    <section class="content--one">
-      <div class="container content">
-        <h2 class="content__title">Quality Designs</h2>
-        <div class="flex">
-          <p class="col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui vivamus arcu felis bibendum ut tristique. Arcu dui vivamus arcu felis. Sociis natoque penatibus et magnis dis.</p>
-          <p class="col">Felis donec et odio pellentesque diam volutpat. Aliquam purus sit amet luctus venenatis. Turpis in eu mi bibendum neque egestas congue quisque egestas. Pellentesque sit amet porttitor eget dolor morbi non.</p>
+
+  <section class="section-one">
+    <div class="container">
+      <h2 class="section-title__dark">
+        Quality Designs
+      </h2>
+      <div class="section-text__dark row">
+        <div class="col">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui vivamus arcu felis bibendum ut tristique. Arcu dui vivamus arcu felis. Sociis natoque penatibus et magnis dis.
+          </p>
+        </div>
+        <div class="col">
+          <p>
+            Felis donec et odio pellentesque diam volutpat. Aliquam purus sit amet luctus venenatis. Turpis in eu mi bibendum neque egestas congue quisque egestas. Pellentesque sit amet porttitor eget dolor morbi non.
+          </p>
         </div>
       </div>
-    </section>
-    <section class="content--two">
-      <div class="container content flex">
-        <div class="content__text">
-          <h2 class="content__title">Made custom for you</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-        </div>
-        <div class="img">
-          <img src="image-01.jpg" alt="ocean sunset view">
-        </div>
+    </div>
+  </section>
+
+  <section class="section-two">
+    <div class="container row">
+      <div class="col">
+        <h2 class="section-title">
+          Made custom for you
+        </h2>
+        <p class="section-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </p>
       </div>
-    </section>
-    <section class="content--three">
-      <div class="container content flex">
-        <div class="img">
-          <img src="image-02.jpg" alt="ocean sunset view">
-        </div>
-        <div class="content__text">
-          <h2 class="content__title">Created with care</h2>
-          <p>Felis donec et odio pellentesque diam volutpat. Aliquam purus sit amet luctus venenatis. Turpis in eu mi bibendum neque egestas congue quisque egestas. Pellentesque sit amet porttitor eget dolor morbi non.</p>
-        </div>
+      <div class="col">
+        <img src="image-01.jpg" alt="sunset over mountain">
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <section class="section-three">
+    <div class="container row">
+      <div class="col">
+        <img src="image-02.jpg" alt="sunset over mountain with branches on foreground">
+      </div>
+      <div class="col">
+        <h2 class="section-title">
+          Created with care
+        </h2>
+        <p class="section-text">
+          Felis donec et odio pellentesque diam volutpat. Aliquam purus sit amet luctus venenatis. Turpis in eu mi bibendum neque egestas congue quisque egestas. Pellentesque sit amet porttitor eget dolor morbi non.
+        </p>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
