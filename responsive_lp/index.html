@@ -4,98 +4,131 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,700&family=Oswald:wght@700&display=swap" rel="stylesheet">  <link href="style.css" rel="stylesheet">
   <title>Landing Page</title>
 </head>
 <body>
-  <nav>
+
+  <nav class="nav">
     <div class="container row">
+      <a href="#" class="visible"></a>
       <img src="logo.svg" alt="responsive layout logo">
-      <div class="nav">
-        <ul class="nav__primary">
+      <div class="nav__links row">
+        <ul class="nav__primary row">
           <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
           <li class="nav__item"><a class="nav__link" href="#">About</a></li>
           <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
         </ul>
-        <ul class="nav__secondary">
+        <ul class="nav__secondary row">
           <li class="nav__item"><a class="nav__link" href="#">Sign In</a></li>
           <li class="nav__item"><a class="nav__link" href="#">Sign Up</a></li>
         </ul>
       </div>
     </div>
   </nav>
+
+
   <main>
     <section class="banner">
       <div class="container row">
         <div class="banner__headline">
-          <h1>Responsive layouts don't have to be a struggle</h1>
+          <h1>Responsive layouts <span class="text--gold">don't have to be a struggle</span></h1>
         </div>
-        <div class="banner__paragraph">
-          <p>Lorem ipsum dolor sit amet, consectetur 3 adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="#" class="CTA--gold">I want to learn</a>
+        <div class="banner__text--center">
+          <div class="banner__text">
+            <p class="banner__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <br>
+            <a href="#" class="CTA--gold">I want to learn</a>
+          </div>
         </div>
       </div>
     </section>
+
     <section class="section--1">
       <div class="container row">
-        <div class="col col__1">
-          <h2>Mobile-first</h2>
+        <div class="section--1__col col">
+          <h2 class="text--gold">Mobile-first</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>
-        <div class="col col__2">
-          <h2>Efficient</h2>
+        <div class="section--1__col col">
+          <h2 class="text--gold">Efficient</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>
-        <div class="col col__3">
-          <h2>Done Right</h2>
+        <div class="section--1__col col">
+          <h2 class="text--gold">Done Right</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>
       </div>
     </section>
+
     <section class="section--2">
       <div class="container row">
-        <div class="col--1">
-          <h2>It doesn't have to be so hard</h2>
+        <div class="section--2__col col">
+          <h2 class="text--gold">It doesn't have to be so hard</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-          <img src="the-image.jpg" alt="mobile sketches">
+          <img src="the-image.jpg" alt="mobile sketches" class="col__img">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>
-        <div class="col--2">
-          <h2>Break it down</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <h2>Work your way up</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <h2>Break it down</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="section--2__col col">
+          <div class="box">
+            <h2>Break it down</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="box">
+            <h2>Work your way up</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="box">
+            <h2>Break it down</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
         </div>
       </div>
     </section>
-    <footer class="footer">
-      <h2>Just scratching the surface</h2>
-      <h3>About our company</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagnaaliqua.Utenimadminim9veniam</p>
-      <h3>Getting Around</h3>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-      <h3>Other Things</h3>
-      <ul>
-        <li>Lorem ipsum</li>
-        <li>dolor</li>
-        <li>sit amet</li>
-        <li>consectetur</li>
-      </ul>
-      <h3>And more</h3>
-      <ul>
-        <li>Lorem ipsum</li>
-        <li>dolor</li>
-        <li>sit amet</li>
-        <li>consectetur</li>
-      </ul>
-    </footer>
+
   </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <h2 class="footer__title">Just scratching the surface</h2>
+      <div class="row">
+        <div class="col">
+          <h3 class="text--gold">About our company</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagnaaliqua.Utenimadminim9veniam</p>
+        </div>
+        <div class="col">
+          <h3 class="text--gold">Getting Around</h3>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3 class="text--gold">Other Things</h3>
+          <ul>
+            <li>Lorem ipsum</li>
+            <li>dolor</li>
+            <li>sit amet</li>
+            <li>consectetur</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3 class="text--gold">And more</h3>
+          <ul>
+            <li>Lorem ipsum</li>
+            <li>dolor</li>
+            <li>sit amet</li>
+            <li>consectetur</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 
 </body>
 </html>

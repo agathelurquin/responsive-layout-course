@@ -1,0 +1,174 @@
+/* set up */
+
+*, *::before, *::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125rem;
+
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* GENERAL */
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  padding: 5% 10%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* navbar */
+
+.nav {
+  background-color: #2E323F;
+  height: auto;
+  justify-content: space-between;
+
+}
+
+.nav__links {
+  align-items: center;
+}
+
+.nav__link {
+  color: #fff;
+}
+
+/* banner */
+
+.banner {
+  background-color: #3B4050;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.banner__headline {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  line-height: 5rem;
+}
+
+.banner__paragraph {
+  margin: 1rem 0;
+  font-size: 1.125rem;
+  opacity: 0.7;
+}
+
+.CTA--gold {
+  display: inline-block;
+  color: #fff;
+  font-family: 'Oswald Bold', sans-serif;
+  font-weight: bold;
+  background-color: #A59678;
+  text-transform: uppercase;
+  padding: 1em 1.5em;
+  border-radius:50px;
+}
+
+.CTA--gold:hover, .CTA--gold:focus {
+  opacity: 0.7;
+}
+
+.text--gold {
+  color: #A59678;
+}
+
+/* section 1 */
+
+.section--1 {
+  background-color: #edeaea;
+  color: #2E323F;
+  padding: 2rem 0;
+}
+
+.section--1__col {
+  font-size: 1.2rem;
+  text-align: center;
+
+}
+
+.section--1 h2 {
+  margin-bottom: 1rem;
+}
+
+.section--1__col + .section--1__col {
+  margin-top: 3rem ;
+}
+
+
+/* section 2 */
+
+.section--2 {
+  padding: 2rem 0;
+}
+
+.box {
+  background-color: #3B4050;
+  color: #fff;
+  margin: 3rem 0;
+  padding: 2rem 5rem;
+  text-align: center;
+}
+
+.box h2 {
+  font-size: 1.25rem;
+  font-family: 'Oswald Bold', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.col__img {
+  padding: 2rem 0;
+}
+
+/* footer */
+
+.footer {
+  padding: 2rem 0;
+  background-color: #3B4050;
+  color: #6F737F;
+}
+
+.footer__title {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .visible {
+    display: none;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .col + .col {
+   margin-left: 4rem;
+  }
+
+  /* banner */
+  .banner__text--center {
+    display: flex;
+    align-items: center;
+  }
+
+  /* section 1 */
+  .col + .col {
+    margin: 0rem 0rem 0rem 3rem;
+  }
+}
