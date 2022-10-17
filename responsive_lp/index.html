@@ -11,40 +11,47 @@
 </head>
 <body>
 
-  <nav class="nav">
+  <header class="header">
     <div class="container row">
-      <a href="#" class="visible"></a>
-      <img src="logo.svg" alt="responsive layout logo">
-      <div class="nav__links row">
-        <ul class="nav__primary row">
-          <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">About</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
-        </ul>
-        <ul class="nav__secondary row">
-          <li class="nav__item"><a class="nav__link" href="#">Sign In</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Sign Up</a></li>
-        </ul>
+      <button class="nav-toggle visible" aria-label="open navigation">
+        <span class="menu-icon"></span>
+      </button>
+      <a class="logo" href="#" >
+        <img src="logo.svg" alt="responsive layout logo">
+      </a>
+      <nav class="nav ">
+        <div class="nav__lists row">
+          <ul class="nav__list nav__list--primary row">
+            <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+          </ul>
+          <ul class="nav__list nav__list--secondary row">
+            <li class="nav__item"><a class="nav__link" href="#">Sign In</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Sign Up</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="banner">
+    <div class="container row">
+      <div class="banner__headline">
+        <h1>Responsive layouts <span class="text--gold">don't have to be a struggle</span></h1>
+      </div>
+      <div class="banner__text--center">
+        <div class="banner__text">
+          <p class="banner__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <br>
+          <a href="#" class="CTA--gold">I want to learn</a>
+        </div>
       </div>
     </div>
-  </nav>
-
+  </section>
 
   <main>
-    <section class="banner">
-      <div class="container row">
-        <div class="banner__headline">
-          <h1>Responsive layouts <span class="text--gold">don't have to be a struggle</span></h1>
-        </div>
-        <div class="banner__text--center">
-          <div class="banner__text">
-            <p class="banner__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <br>
-            <a href="#" class="CTA--gold">I want to learn</a>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section class="section--1">
       <div class="container row">
@@ -64,25 +71,31 @@
     </section>
 
     <section class="section--2">
-      <div class="container row">
+      <div class="section--2__content container row">
         <div class="section--2__col col">
           <h2 class="text--gold">It doesn't have to be so hard</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           <img src="the-image.jpg" alt="mobile sketches" class="col__img">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>
-        <div class="section--2__col col">
+        <div class="section--2__col--2 col">
           <div class="box">
-            <h2>Break it down</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="box-content">
+              <h2>Break it down</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
           </div>
           <div class="box">
-            <h2>Work your way up</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="box-content">
+              <h2>Work your way up</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
           </div>
           <div class="box">
-            <h2>Break it down</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="box-content">
+              <h2>Break it down</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -129,6 +142,6 @@
     </div>
   </footer>
 
-
+  <script src="main.js"></script>
 </body>
 </html>
