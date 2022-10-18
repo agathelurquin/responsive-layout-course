@@ -37,16 +37,18 @@ img {
 .header {
   background-color: #2E323F;
   text-align: center;
+  height: auto;
   padding: 2em;
 }
 
 .nav-toggle {
   cursor: pointer;
   border: 0;
+  border-radius: 50%;
   width: 4em;
   height: 4em;
   background: #A59678;
-  border-radius: 50%;
+  border-radius: 50;
   color: #fff;
   transition: opacity 200ms ease;
   position: absolute;
@@ -86,15 +88,13 @@ img {
   transform: translateY(3px);
 }
 
-.logo {
-  height: 40em;
-}
-
 .nav {
   visibility: hidden;
   height: 0;
   position: absolute;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav--visible {
@@ -238,6 +238,17 @@ img {
   margin-bottom: 1rem;
 }
 
+.footer__ul {
+  padding-left: 0;
+}
+
+.footer__li:hover {
+  cursor: pointer;
+  color: white  ;
+}
+
+
+
 
 @media only screen and (min-width: 1000px) {
   .visible {
@@ -294,5 +305,12 @@ img {
   .section--2__content {
     display: flex;
     align-items: flex-start;
+  }
+
+  /* footer */
+  .footer__row {
+    margin-top: 2rem;
+    align-items: flex-start;
+
   }
 }
